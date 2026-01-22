@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section id="hero" className="section hero">
+    <section id="hero" className="section hero reveal">
       <div className="container hero-grid">
         <div>
           <p className="helper">Software a la medida para empresas en crecimiento</p>

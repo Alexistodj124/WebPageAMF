@@ -18,7 +18,7 @@ const services = [
 
 function Services() {
   return (
-    <section id="services" className="section">
+    <section id="services" className="section reveal">
       <div className="container">
         <h2 className="section-title">Servicios pensados para tu operación</h2>
         <p className="section-subtitle">

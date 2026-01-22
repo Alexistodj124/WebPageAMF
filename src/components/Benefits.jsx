@@ -19,7 +19,7 @@ const benefits = [
 
 function Benefits() {
   return (
-    <section id="benefits" className="section">
+    <section id="benefits" className="section reveal">
       <div className="container">
         <h2 className="section-title">Beneficios que se sienten desde el primer mes</h2>
         <p className="section-subtitle">

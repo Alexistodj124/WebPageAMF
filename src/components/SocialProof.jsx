@@ -6,7 +6,7 @@ const proofs = [
 
 function SocialProof() {
   return (
-    <section id="social-proof" className="section social-proof">
+    <section id="social-proof" className="section social-proof reveal">
       <div className="container">
         <h2 className="section-title">Clientes satisfechos, resultados reales</h2>
         <p className="section-subtitle">
