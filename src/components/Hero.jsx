@@ -10,7 +10,7 @@ function Hero() {
             ágil, segura y escalable. El software se adapta a tu empresa, no tu empresa a
             un software.
           </p>
-          <div className="nav-cta" style={{ justifyContent: 'flex-start' }}>
+          <div className="hero-actions">
             <a className="btn btn-primary" href="#contact">
               Agendar llamada
             </a>
