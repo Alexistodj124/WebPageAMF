@@ -103,6 +103,10 @@
   .hero-card::after {
     animation: none;
   }
+
+  .typing-cursor {
+    animation: none;
+  }
 }
 
 .navbar {
@@ -244,6 +248,32 @@
   margin: 0 0 16px;
   line-height: 1.05;
   letter-spacing: -0.03em;
+}
+
+.hero-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.typing-cursor {
+  width: 10px;
+  height: 18px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #7cc4ff, transparent);
+  box-shadow: 0 0 12px rgba(124, 196, 255, 0.9);
+  animation: cursorBlink 0.9s steps(2, start) infinite;
+}
+
+@keyframes cursorBlink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  46%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .hero p {
