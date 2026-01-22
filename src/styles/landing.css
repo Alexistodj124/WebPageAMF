@@ -107,6 +107,11 @@
   .typing-cursor {
     animation: none;
   }
+
+  .code-text {
+    animation: none;
+    width: auto;
+  }
 }
 
 .navbar {
@@ -354,6 +359,99 @@
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
+}
+
+.code-card {
+  padding: 0;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(124, 196, 255, 0.16);
+  background: rgba(9, 14, 26, 0.95);
+}
+
+.code-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(124, 196, 255, 0.45);
+  box-shadow: 0 0 10px rgba(124, 196, 255, 0.45);
+}
+
+.code-title {
+  margin-left: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.code-body {
+  position: relative;
+  padding: 18px 20px 22px;
+  font-family: "Space Mono", "Courier New", monospace;
+  font-size: 0.92rem;
+  color: #d7e6ff;
+  min-height: 170px;
+}
+
+.code-lines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: code;
+  display: grid;
+  gap: 8px;
+}
+
+.code-lines li {
+  counter-increment: code;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.code-lines li::before {
+  content: counter(code);
+  color: rgba(148, 163, 195, 0.6);
+  font-size: 0.8rem;
+}
+
+.code-text {
+  color: #d7e6ff;
+  display: inline-block;
+  animation: codeTyping 2.8s steps(18, end) both;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.code-card:nth-child(2) .code-text {
+  animation-delay: 0.3s;
+}
+
+.code-card:nth-child(3) .code-text {
+  animation-delay: 0.6s;
+}
+
+.code-cursor {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  height: 1.1em;
+}
+
+@keyframes codeTyping {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .card:hover {

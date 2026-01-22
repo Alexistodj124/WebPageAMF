@@ -1,18 +1,33 @@
 const services = [
   {
     title: 'Desarrollo de software completamente personalizado',
-    description:
-      'Construimos soluciones desde cero o modernizamos tus plataformas actuales con una base tecnológica sólida.',
+    lines: [
+      'const producto = diseñarSolucion({',
+      "  objetivo: 'tu flujo real',",
+      "  enfoque: 'a la medida',",
+      "  base: 'escalable',",
+      '})',
+    ],
   },
   {
     title: 'Sistemas internos inteligentes',
-    description:
-      'Inventario, pedidos, reportes, automatización y dashboards integrados en una sola operación coherente.',
+    lines: [
+      'const operaciones = integrarSistemas([',
+      "  'inventario', 'pedidos',",
+      "  'reportes', 'automatización',",
+      "  'dashboards',",
+      '])',
+    ],
   },
   {
     title: 'Integraciones y soporte continuo',
-    description:
-      'Conectamos tus herramientas críticas y acompañamos el crecimiento de tu empresa con soporte cercano.',
+    lines: [
+      'const soporte = acompañarCrecimiento({',
+      "  integraciones: 'herramientas clave',",
+      "  seguimiento: 'cercano',",
+      "  mejora: 'constante',",
+      '})',
+    ],
   },
 ]
 
@@ -27,19 +42,23 @@ function Services() {
         </p>
         <div className="grid-3">
           {services.map((service) => (
-            <article key={service.title} className="card">
-              <div className="icon">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M4 10h12M10 4v12"
-                    stroke="#0b6bcb"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                  />
-                </svg>
+            <article key={service.title} className="card code-card">
+              <div className="code-header">
+                <span className="code-dot" />
+                <span className="code-dot" />
+                <span className="code-dot" />
+                <span className="code-title">{service.title}</span>
               </div>
-              <h4>{service.title}</h4>
-              <p>{service.description}</p>
+              <div className="code-body">
+                <ol className="code-lines">
+                  {service.lines.map((line) => (
+                    <li key={line}>
+                      <span className="code-text">{line}</span>
+                    </li>
+                  ))}
+                </ol>
+                <span className="typing-cursor code-cursor" aria-hidden="true" />
+              </div>
             </article>
           ))}
         </div>

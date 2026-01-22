@@ -19,7 +19,7 @@ function Hero() {
       if (index >= fullTitle.length) {
         window.clearInterval(interval)
       }
-    }, 90)
+    }, 200)
 
     return () => window.clearInterval(interval)
   }, [fullTitle])
