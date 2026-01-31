@@ -2,31 +2,28 @@ const services = [
   {
     title: 'Desarrollo de software completamente personalizado',
     lines: [
-      'const producto = diseñarSolucion({',
-      "  objetivo: 'tu flujo real',",
-      "  enfoque: 'a la medida',",
-      "  base: 'escalable',",
-      '})',
+      'Iniciamos con tu flujo real como punto de partida.',
+      'Definimos módulos a la medida de cada equipo.',
+      'Construimos una base sólida y escalable.',
+      'Documentamos cada paso para una adopción clara.',
     ],
   },
   {
     title: 'Sistemas internos inteligentes',
     lines: [
-      'const operaciones = integrarSistemas([',
-      "  'inventario', 'pedidos',",
-      "  'reportes', 'automatización',",
-      "  'dashboards',",
-      '])',
+      'Conectamos inventario, pedidos y reportes en un solo flujo.',
+      'Automatizamos tareas repetitivas sin fricción.',
+      'Creamos dashboards para decisiones inmediatas.',
+      'Simplificamos la operación diaria de tu equipo.',
     ],
   },
   {
     title: 'Integraciones y soporte continuo',
     lines: [
-      'const soporte = acompañarCrecimiento({',
-      "  integraciones: 'herramientas clave',",
-      "  seguimiento: 'cercano',",
-      "  mejora: 'constante',",
-      '})',
+      'Integramos tus herramientas clave con estabilidad.',
+      'Monitoreamos resultados y ajustes necesarios.',
+      'Acompañamos el crecimiento con soporte cercano.',
+      'Mejoramos continuamente tu ecosistema digital.',
     ],
   },
 ]

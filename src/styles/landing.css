@@ -111,6 +111,7 @@
   .code-text {
     animation: none;
     width: auto;
+    clip-path: none;
   }
 }
 
@@ -425,17 +426,18 @@
 .code-text {
   color: #d7e6ff;
   display: inline-block;
-  animation: codeTyping 2.8s steps(18, end) both;
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: normal;
+  overflow: visible;
+  clip-path: inset(0 100% 0 0);
+  animation: codeReveal 2.4s steps(22, end) both;
 }
 
 .code-card:nth-child(2) .code-text {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 .code-card:nth-child(3) .code-text {
-  animation-delay: 0.6s;
+  animation-delay: 0.4s;
 }
 
 .code-cursor {
@@ -445,12 +447,12 @@
   height: 1.1em;
 }
 
-@keyframes codeTyping {
+@keyframes codeReveal {
   from {
-    width: 0;
+    clip-path: inset(0 100% 0 0);
   }
   to {
-    width: 100%;
+    clip-path: inset(0 0 0 0);
   }
 }
 
