@@ -12,9 +12,9 @@ function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Link to="/" className="brand">
-              <span className="brand-mark" aria-hidden="true">A</span>
-              <span>AMF Technologies</span>
+            <Link to="/" className="brand" aria-label="AMF Technologies — Home">
+              <img src="/logo.png" alt="AMF" className="brand-logo" />
+              <span className="brand-suffix">Technologies</span>
             </Link>
             <p>{t('footer.tagline')}</p>
           </div>

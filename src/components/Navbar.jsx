@@ -20,8 +20,8 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar-inner">
         <NavLink to="/" className="brand" aria-label="AMF Technologies — Home">
-          <span className="brand-mark" aria-hidden="true">A</span>
-          <span>AMF Technologies</span>
+          <img src="/logo.png" alt="AMF" className="brand-logo" />
+          <span className="brand-suffix">Technologies</span>
         </NavLink>
 
         <nav className="nav-links" aria-label="Primary">
