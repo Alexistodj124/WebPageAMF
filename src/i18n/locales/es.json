@@ -1,0 +1,299 @@
+{
+  "meta": {
+    "default_title": "AMF Technologies — Software empresarial a la medida",
+    "default_description": "Diseñamos y construimos plataformas, integraciones e inteligencia operativa a la medida de empresas de Latinoamérica.",
+    "page_titles": {
+      "home": "AMF Technologies — Software empresarial a la medida",
+      "services": "Servicios — AMF Technologies",
+      "cases": "Casos de éxito — AMF Technologies",
+      "industries": "Industrias — AMF Technologies",
+      "contact": "Contacto — AMF Technologies"
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "cases": "Casos de éxito",
+    "industries": "Industrias",
+    "contact": "Contacto",
+    "cta": "Agendar reunión",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú"
+  },
+  "hero": {
+    "eyebrow": "Software empresarial a la medida",
+    "title": "Tecnología que se adapta a tu negocio, no al revés.",
+    "subtitle": "Diseñamos y construimos plataformas, integraciones e inteligencia operativa para que las empresas escalen con control, claridad y velocidad.",
+    "cta_primary": "Conversemos",
+    "cta_secondary": "Ver servicios",
+    "meta": {
+      "delivery": "Entregas iterativas cada 2 semanas",
+      "support": "Soporte continuo post-lanzamiento",
+      "stack": "Stack moderno y escalable"
+    },
+    "panel": {
+      "label": "Operación AMF",
+      "status": "Activo",
+      "kpis": {
+        "delivery": "Entregas a tiempo",
+        "uptime": "Disponibilidad SLA",
+        "satisfaction": "Satisfacción cliente"
+      },
+      "footer": "Acompañamos a equipos en <strong>banca, retail, salud y logística</strong>"
+    }
+  },
+  "logos_band": {
+    "label": "Empresas que confían en AMF Technologies"
+  },
+  "stats": {
+    "title": "Resultados que importan",
+    "subtitle": "Trabajamos con equipos de operaciones, finanzas y tecnología que necesitan resultados verificables.",
+    "items": {
+      "projects": "Proyectos entregados",
+      "industries": "Industrias atendidas",
+      "uptime": "Uptime promedio",
+      "experience": "Años de experiencia"
+    }
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Cómo construimos soluciones que sí escalan",
+    "subtitle": "Cada proyecto parte de un diagnóstico riguroso para entregar exactamente lo que tu operación necesita —ni más, ni menos.",
+    "items": {
+      "custom": {
+        "title": "Software a la medida",
+        "description": "Plataformas internas, ERPs especializados y portales de clientes diseñados desde tus procesos reales.",
+        "bullets": {
+          "0": "Arquitectura modular y escalable",
+          "1": "Integración con tus sistemas existentes",
+          "2": "Documentación y handover completos"
+        }
+      },
+      "automation": {
+        "title": "Automatización e inteligencia operativa",
+        "description": "Flujos automatizados, dashboards en tiempo real y modelos predictivos para decisiones más rápidas.",
+        "bullets": {
+          "0": "Automatización de procesos repetitivos",
+          "1": "Dashboards y reportes ejecutivos",
+          "2": "Análisis predictivo y alertas"
+        }
+      },
+      "integration": {
+        "title": "Integraciones y modernización",
+        "description": "Conectamos tus herramientas, modernizamos sistemas legacy y aseguramos un ecosistema digital robusto.",
+        "bullets": {
+          "0": "APIs, ETL y middleware seguros",
+          "1": "Migración de sistemas legacy",
+          "2": "Monitoreo y soporte 24/7"
+        }
+      }
+    },
+    "process": {
+      "title": "Nuestro proceso",
+      "subtitle": "Una metodología iterativa probada en proyectos críticos.",
+      "steps": {
+        "discovery": {
+          "title": "Descubrimiento",
+          "description": "Workshops con tus equipos para mapear procesos, dolores y objetivos medibles."
+        },
+        "design": {
+          "title": "Diseño y arquitectura",
+          "description": "Definimos UX, flujos técnicos y stack, validando con prototipos navegables."
+        },
+        "build": {
+          "title": "Construcción ágil",
+          "description": "Sprints quincenales con demos y entregables verificables en cada iteración."
+        },
+        "scale": {
+          "title": "Escalamiento y soporte",
+          "description": "Acompañamos el go-live con monitoreo, mejoras continuas y SLA garantizados."
+        }
+      }
+    }
+  },
+  "industries": {
+    "eyebrow": "Industrias",
+    "title": "Experiencia en sectores que demandan precisión",
+    "subtitle": "Hemos trabajado con empresas que operan bajo regulación, alta carga transaccional y márgenes ajustados.",
+    "items": {
+      "finance": {
+        "tag": "Banca y finanzas",
+        "title": "Plataformas seguras para operaciones financieras",
+        "description": "Sistemas de originación, riesgo y conciliación con auditoría completa y cumplimiento regulatorio."
+      },
+      "retail": {
+        "tag": "Retail y consumo",
+        "title": "Inventario, ventas y experiencia del cliente",
+        "description": "Integramos POS, e-commerce y backoffice para una visión unificada del negocio."
+      },
+      "health": {
+        "tag": "Salud",
+        "title": "Software clínico y administrativo",
+        "description": "Expedientes electrónicos, agendamiento y reporting con privacidad y trazabilidad clínica."
+      },
+      "logistics": {
+        "tag": "Logística y supply chain",
+        "title": "Visibilidad de extremo a extremo",
+        "description": "TMS, WMS y dashboards operativos para optimizar rutas, inventarios y tiempos de entrega."
+      },
+      "manufacturing": {
+        "tag": "Manufactura",
+        "title": "Producción, calidad y mantenimiento",
+        "description": "Sistemas MES y de control de planta integrados a ERPs y sensores IoT industriales."
+      },
+      "services": {
+        "tag": "Servicios profesionales",
+        "title": "Operación y facturación inteligente",
+        "description": "CRMs especializados, gestión de proyectos y automatización de cobranza para firmas en crecimiento."
+      }
+    },
+    "cta_view_cases": "Ver casos relacionados"
+  },
+  "cases": {
+    "eyebrow": "Casos de éxito",
+    "title": "Proyectos que transformaron la operación de nuestros clientes",
+    "subtitle": "Una selección representativa de implementaciones recientes. Métricas verificadas con cada cliente.",
+    "filter_all": "Todas las industrias",
+    "view_more": "Ver detalle",
+    "items": {
+      "retail_platform": {
+        "industry": "retail",
+        "industry_label": "Retail",
+        "title": "Plataforma omnicanal para retailer regional",
+        "description": "Unificación de inventario, ventas online y POS físico con vista única en tiempo real para 38 sucursales.",
+        "metrics": {
+          "0": { "value": "32%", "label": "Reducción tiempo operativo" },
+          "1": { "value": "4×", "label": "Velocidad de despacho" },
+          "2": { "value": "99.97%", "label": "Uptime" }
+        },
+        "tech": ["React", "Node.js", "PostgreSQL", "AWS"]
+      },
+      "fintech_origination": {
+        "industry": "finance",
+        "industry_label": "Banca",
+        "title": "Originación digital para entidad financiera",
+        "description": "Plataforma end-to-end de solicitud, evaluación y desembolso con motor de riesgo automatizado.",
+        "metrics": {
+          "0": { "value": "−68%", "label": "Tiempo de aprobación" },
+          "1": { "value": "12k+", "label": "Solicitudes mensuales" },
+          "2": { "value": "AAA", "label": "Auditoría compliance" }
+        },
+        "tech": ["Next.js", ".NET", "Azure", "SQL Server"]
+      },
+      "logistics_visibility": {
+        "industry": "logistics",
+        "industry_label": "Logística",
+        "title": "Centro de control logístico para operador internacional",
+        "description": "Visibilidad en tiempo real de flota, rutas y SLA con alertas inteligentes y modelo predictivo de retrasos.",
+        "metrics": {
+          "0": { "value": "+22%", "label": "Eficiencia de ruta" },
+          "1": { "value": "−45%", "label": "Reclamos por retraso" },
+          "2": { "value": "1.8M", "label": "Eventos diarios" }
+        },
+        "tech": ["React", "Python", "Kafka", "GCP"]
+      },
+      "health_records": {
+        "industry": "health",
+        "industry_label": "Salud",
+        "title": "Expediente clínico para red hospitalaria",
+        "description": "Sistema integrado de historia clínica, agendamiento y facturación con cifrado de extremo a extremo.",
+        "metrics": {
+          "0": { "value": "5", "label": "Hospitales conectados" },
+          "1": { "value": "−40%", "label": "Tiempo administrativo" },
+          "2": { "value": "100%", "label": "Cumplimiento HIPAA" }
+        },
+        "tech": ["Vue.js", "Django", "PostgreSQL", "AWS"]
+      },
+      "manufacturing_mes": {
+        "industry": "manufacturing",
+        "industry_label": "Manufactura",
+        "title": "MES para planta de manufactura",
+        "description": "Control de producción en tiempo real con integración a ERP, sensores IoT y módulos de calidad.",
+        "metrics": {
+          "0": { "value": "+18%", "label": "OEE" },
+          "1": { "value": "−63%", "label": "Tiempo de paro" },
+          "2": { "value": "24/7", "label": "Monitoreo continuo" }
+        },
+        "tech": ["Angular", "Java", "MQTT", "Azure IoT"]
+      },
+      "services_crm": {
+        "industry": "services",
+        "industry_label": "Servicios",
+        "title": "CRM y portal de clientes para firma profesional",
+        "description": "Plataforma integral de gestión de proyectos, facturación electrónica y portal de autoservicio para clientes.",
+        "metrics": {
+          "0": { "value": "3×", "label": "Velocidad de cobranza" },
+          "1": { "value": "+47%", "label": "Tickets resueltos" },
+          "2": { "value": "92", "label": "NPS" }
+        },
+        "tech": ["React", "Node.js", "MongoDB", "Stripe"]
+      }
+    }
+  },
+  "cta_strip": {
+    "title": "¿Listo para construir lo que tu operación necesita?",
+    "subtitle": "Trabajamos contigo desde el diagnóstico hasta el despliegue —y más allá. Cuéntanos tu reto.",
+    "primary": "Agendar reunión",
+    "secondary": "Ver servicios"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Conversemos sobre tu proyecto",
+    "subtitle": "Cuéntanos qué necesitas y diseñamos una propuesta clara, sin compromisos.",
+    "info": {
+      "title": "Contacto directo",
+      "phone_label": "Teléfono",
+      "phone_value": "+502 5043-8645",
+      "email_label": "Email",
+      "email_value": "contacto@amftechnologies.com",
+      "office_label": "Oficina",
+      "office_value": "Ciudad de Guatemala, Guatemala",
+      "social_label": "Instagram",
+      "social_value": "@amf.technologies"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Te respondemos en menos de 24 horas hábiles.",
+      "name": "Nombre",
+      "name_placeholder": "Tu nombre completo",
+      "email": "Email corporativo",
+      "email_placeholder": "tu@empresa.com",
+      "company": "Empresa",
+      "company_placeholder": "Nombre de tu empresa",
+      "industry": "Industria",
+      "industry_placeholder": "Selecciona una opción",
+      "message": "¿En qué podemos ayudarte?",
+      "message_placeholder": "Cuéntanos brevemente tu reto o proyecto",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando…",
+      "required_marker": "*",
+      "errors": {
+        "required": "Por favor completa los campos marcados con *.",
+        "email": "Ingresa un correo electrónico válido.",
+        "submit": "Hubo un error al enviar el formulario. Inténtalo de nuevo."
+      },
+      "success": "Gracias. Hemos recibido tu mensaje y te responderemos en breve."
+    }
+  },
+  "footer": {
+    "tagline": "Software empresarial a la medida para organizaciones que escalan en Latinoamérica.",
+    "company": "Empresa",
+    "solutions": "Soluciones",
+    "resources": "Recursos",
+    "contact": "Contacto",
+    "links": {
+      "about": "Sobre nosotros",
+      "industries": "Industrias",
+      "cases": "Casos de éxito",
+      "services_custom": "Software a la medida",
+      "services_automation": "Automatización",
+      "services_integration": "Integraciones",
+      "services_support": "Soporte y SLA",
+      "blog": "Blog",
+      "careers": "Carreras",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    },
+    "rights": "© {{year}} AMF Technologies. Todos los derechos reservados."
+  }
+}

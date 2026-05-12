@@ -1,61 +1,35 @@
-const services = [
-  {
-    title: 'Desarrollo de software completamente personalizado',
-    lines: [
-      'Iniciamos con tu flujo real como punto de partida.',
-      'Definimos módulos a la medida de cada equipo.',
-      'Construimos una base sólida y escalable.',
-      'Documentamos cada paso para una adopción clara.',
-    ],
-  },
-  {
-    title: 'Sistemas internos inteligentes',
-    lines: [
-      'Conectamos inventario, pedidos y reportes en un solo flujo.',
-      'Automatizamos tareas repetitivas sin fricción.',
-      'Creamos dashboards para decisiones inmediatas.',
-      'Simplificamos la operación diaria de tu equipo.',
-    ],
-  },
-  {
-    title: 'Integraciones y soporte continuo',
-    lines: [
-      'Integramos tus herramientas clave con estabilidad.',
-      'Monitoreamos resultados y ajustes necesarios.',
-      'Acompañamos el crecimiento con soporte cercano.',
-      'Mejoramos continuamente tu ecosistema digital.',
-    ],
-  },
-]
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import Icon from './Icon'
+import { services } from '../data/services'
 
-function Services() {
+function Services({ withCta = true }) {
+  const { t } = useTranslation()
+
   return (
-    <section id="services" className="section reveal">
+    <section className="section reveal">
       <div className="container">
-        <h2 className="section-title">Servicios pensados para tu operación</h2>
-        <p className="section-subtitle">
-          Cada proyecto parte de un diagnóstico profundo para construir la solución exacta
-          que tu equipo necesita.
-        </p>
+        <span className="eyebrow">{t('services.eyebrow')}</span>
+        <h2 className="section-title">{t('services.title')}</h2>
+        <p className="section-subtitle">{t('services.subtitle')}</p>
         <div className="grid-3">
           {services.map((service) => (
-            <article key={service.title} className="card code-card">
-              <div className="code-header">
-                <span className="code-dot" />
-                <span className="code-dot" />
-                <span className="code-dot" />
-                <span className="code-title">{service.title}</span>
-              </div>
-              <div className="code-body">
-                <ol className="code-lines">
-                  {service.lines.map((line) => (
-                    <li key={line}>
-                      <span className="code-text">{line}</span>
-                    </li>
-                  ))}
-                </ol>
-                <span className="typing-cursor code-cursor" aria-hidden="true" />
-              </div>
+            <article key={service.id} className="card">
+              <span className="card-icon">
+                <Icon name={service.icon} size={22} />
+              </span>
+              <h3>{t(`services.items.${service.id}.title`)}</h3>
+              <p>{t(`services.items.${service.id}.description`)}</p>
+              <ul className="card-list">
+                {[0, 1, 2].map((i) => (
+                  <li key={i}>{t(`services.items.${service.id}.bullets.${i}`)}</li>
+                ))}
+              </ul>
+              {withCta ? (
+                <Link to="/servicios" className="btn-ghost" style={{ marginTop: 18, display: 'inline-block' }}>
+                  {t('cases.view_more')}
+                </Link>
+              ) : null}
             </article>
           ))}
         </div>

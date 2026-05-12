@@ -1,10 +1,20 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter-tight/600.css';
+@import '@fontsource/inter-tight/700.css';
+@import '@fontsource/inter-tight/800.css';
+
 :root {
-  color: #e8f0ff;
-  background-color: #05070d;
-  font-family: "Outfit", "Trebuchet MS", sans-serif;
+  color: #e6ebf5;
+  background-color: #07090f;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
 * {
@@ -18,7 +28,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #05070d;
+  background-color: #07090f;
 }
 
 a {
@@ -26,16 +36,18 @@ a {
   text-decoration: none;
 }
 
-img {
+img,
+svg {
   max-width: 100%;
   display: block;
 }
 
 button {
   font-family: inherit;
+  cursor: pointer;
 }
 
 ::selection {
-  background: #c7f0ff;
-  color: #0b0f1a;
+  background: #3b82f6;
+  color: #ffffff;
 }

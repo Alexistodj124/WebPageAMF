@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 32" fill="none">
+  <rect x="2" y="6" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+  <path d="M7 22V14l8 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="22" fill="currentColor" font-family="Inter, sans-serif" font-size="15" font-weight="700" letter-spacing="-0.02em">Northbank</text>
+</svg>

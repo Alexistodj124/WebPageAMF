@@ -1,58 +1,67 @@
 import { useState } from 'react'
-
-const navItems = [
-  { label: 'Servicios', href: '#services' },
-  { label: 'Beneficios', href: '#benefits' },
-  { label: 'Resultados', href: '#social-proof' },
-  { label: 'Contacto', href: '#contact' },
-]
+import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
 
 function Navbar() {
+  const { t } = useTranslation()
   const [open, setOpen] = useState(false)
+  const closeMenu = () => setOpen(false)
 
-  const handleToggle = () => setOpen((prev) => !prev)
-  const handleClose = () => setOpen(false)
+  const links = [
+    { to: '/', key: 'home', end: true },
+    { to: '/servicios', key: 'services' },
+    { to: '/casos-de-exito', key: 'cases' },
+    { to: '/industrias', key: 'industries' },
+    { to: '/contacto', key: 'contact' },
+  ]
 
   return (
     <header className="navbar">
       <div className="container navbar-inner">
-        <span className="brand">AMF Technologies</span>
-        <nav className="nav-links">
-          {navItems.map((item) => (
-            <a key={item.href} href={item.href}>
-              {item.label}
-            </a>
+        <NavLink to="/" className="brand" aria-label="AMF Technologies — Home">
+          <span className="brand-mark" aria-hidden="true">A</span>
+          <span>AMF Technologies</span>
+        </NavLink>
+
+        <nav className="nav-links" aria-label="Primary">
+          {links.map((link) => (
+            <NavLink key={link.to} to={link.to} end={link.end}>
+              {t(`nav.${link.key}`)}
+            </NavLink>
           ))}
         </nav>
+
         <div className="nav-cta">
-          <a className="btn btn-secondary" href="#benefits">
-            Ver beneficios
-          </a>
-          <a className="btn btn-primary" href="#contact">
-            Agendar llamada
-          </a>
+          <LanguageSwitcher />
+          <NavLink to="/contacto" className="btn btn-primary">
+            {t('nav.cta')}
+          </NavLink>
         </div>
+
         <button
-          className="hamburger"
           type="button"
-          aria-label="Abrir menú"
+          className="hamburger"
+          aria-label={open ? t('nav.close_menu') : t('nav.open_menu')}
           aria-expanded={open}
-          onClick={handleToggle}
+          onClick={() => setOpen((prev) => !prev)}
         >
           <span />
           <span />
           <span />
         </button>
       </div>
+
       <div className={`container mobile-menu ${open ? 'open' : ''}`}>
-        {navItems.map((item) => (
-          <a key={item.href} href={item.href} onClick={handleClose}>
-            {item.label}
-          </a>
+        {links.map((link) => (
+          <NavLink key={link.to} to={link.to} end={link.end} onClick={closeMenu}>
+            {t(`nav.${link.key}`)}
+          </NavLink>
         ))}
-        <a className="btn btn-primary" href="#contact" onClick={handleClose}>
-          Agendar llamada
-        </a>
+        <LanguageSwitcher />
+        <NavLink to="/contacto" className="btn btn-primary" onClick={closeMenu}>
+          {t('nav.cta')}
+        </NavLink>
       </div>
     </header>
   )

@@ -1,60 +1,64 @@
-import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Trans, useTranslation } from 'react-i18next'
+import Icon from './Icon'
 
 function Hero() {
-  const fullTitle = 'AMF Technologies'
-  const [title, setTitle] = useState(fullTitle)
-
-  useEffect(() => {
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
-    if (prefersReducedMotion.matches) {
-      setTitle(fullTitle)
-      return
-    }
-
-    let index = 0
-    setTitle('')
-    const interval = window.setInterval(() => {
-      index += 1
-      setTitle(fullTitle.slice(0, index))
-      if (index >= fullTitle.length) {
-        window.clearInterval(interval)
-      }
-    }, 200)
-
-    return () => window.clearInterval(interval)
-  }, [fullTitle])
+  const { t } = useTranslation()
 
   return (
-    <section id="hero" className="section hero reveal">
+    <section className="section hero reveal">
       <div className="container hero-grid">
         <div>
-          <p className="helper">Software a la medida para empresas en crecimiento</p>
-          <h1 className="hero-title">
-            {title}
-            <span className="typing-cursor" aria-hidden="true" />
-          </h1>
-          <p>
-            Diseñamos y construimos plataformas a la medida para que tu operación sea más
-            ágil, segura y escalable. El software se adapta a tu empresa, no tu empresa a
-            un software.
-          </p>
+          <span className="eyebrow">{t('hero.eyebrow')}</span>
+          <h1>{t('hero.title')}</h1>
+          <p className="lead">{t('hero.subtitle')}</p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#contact">
-              Agendar llamada
-            </a>
-            <a className="btn btn-secondary" href="#benefits">
-              Ver beneficios
-            </a>
+            <Link to="/contacto" className="btn btn-primary">
+              {t('hero.cta_primary')}
+            </Link>
+            <Link to="/servicios" className="btn btn-secondary">
+              {t('hero.cta_secondary')}
+            </Link>
+          </div>
+          <div className="hero-meta">
+            <span className="hero-meta-item">
+              <Icon name="check" size={16} />
+              {t('hero.meta.delivery')}
+            </span>
+            <span className="hero-meta-item">
+              <Icon name="check" size={16} />
+              {t('hero.meta.support')}
+            </span>
+            <span className="hero-meta-item">
+              <Icon name="check" size={16} />
+              {t('hero.meta.stack')}
+            </span>
           </div>
         </div>
-        <div className="hero-card">
-          <h3>Lo que entregamos</h3>
-          <ul>
-            <li>Software 100% alineado a tu flujo y procesos internos.</li>
-            <li>Automatización sin fricciones entre equipos y áreas.</li>
-            <li>Dashboards claros para tomar decisiones con confianza.</li>
-          </ul>
-        </div>
+
+        <aside className="hero-panel" aria-label={t('hero.panel.label')}>
+          <div className="hero-panel-header">
+            <span>{t('hero.panel.label')}</span>
+            <span className="status-pill">{t('hero.panel.status')}</span>
+          </div>
+          <div className="kpi-grid">
+            <div className="kpi">
+              <span className="kpi-value">98%</span>
+              <span className="kpi-label">{t('hero.panel.kpis.delivery')}</span>
+            </div>
+            <div className="kpi">
+              <span className="kpi-value">99.9%</span>
+              <span className="kpi-label">{t('hero.panel.kpis.uptime')}</span>
+            </div>
+            <div className="kpi">
+              <span className="kpi-value">9.4</span>
+              <span className="kpi-label">{t('hero.panel.kpis.satisfaction')}</span>
+            </div>
+          </div>
+          <div className="hero-panel-footer">
+            <Trans i18nKey="hero.panel.footer" components={{ strong: <strong /> }} />
+          </div>
+        </aside>
       </div>
     </section>
   )
