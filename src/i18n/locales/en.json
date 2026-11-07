@@ -40,7 +40,7 @@
         "uptime": "SLA uptime",
         "satisfaction": "Client satisfaction"
       },
-      "footer": "Trusted by teams in <strong>banking, retail, healthcare, and logistics</strong>"
+      "footer": "Trusted by teams in <strong>condominiums, manufacturing, and retail</strong>"
     }
   },
   "logos_band": {
@@ -52,8 +52,7 @@
     "items": {
       "projects": "Projects delivered",
       "industries": "Industries served",
-      "uptime": "Average uptime",
-      "experience": "Years of experience"
+      "uptime": "Average uptime"
     }
   },
   "services": {
@@ -72,11 +71,11 @@
       },
       "automation": {
         "title": "Automation and operational intelligence",
-        "description": "Automated workflows, real-time dashboards, and predictive models for faster decisions.",
+        "description": "Automated workflows and real-time dashboards for faster decisions.",
         "bullets": {
           "0": "Process automation",
           "1": "Executive dashboards and reports",
-          "2": "Predictive analytics and alerts"
+          "2": "Alerts and notifications"
         }
       },
       "integration": {

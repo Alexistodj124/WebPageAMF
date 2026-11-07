@@ -4,7 +4,6 @@ const stats = [
   { value: '60+', key: 'projects' },
   { value: '12', key: 'industries' },
   { value: '99.9%', key: 'uptime' },
-  { value: '8+', key: 'experience' },
 ]
 
 function StatsRow() {

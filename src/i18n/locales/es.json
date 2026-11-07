@@ -40,7 +40,7 @@
         "uptime": "Disponibilidad SLA",
         "satisfaction": "Satisfacción cliente"
       },
-      "footer": "Acompañamos a equipos en <strong>banca, retail, salud y logística</strong>"
+      "footer": "Acompañamos a equipos en <strong>condominios, producción y comercio</strong>"
     }
   },
   "logos_band": {
@@ -52,8 +52,7 @@
     "items": {
       "projects": "Proyectos entregados",
       "industries": "Industrias atendidas",
-      "uptime": "Uptime promedio",
-      "experience": "Años de experiencia"
+      "uptime": "Uptime promedio"
     }
   },
   "services": {
@@ -72,11 +71,11 @@
       },
       "automation": {
         "title": "Automatización e inteligencia operativa",
-        "description": "Flujos automatizados, dashboards en tiempo real y modelos predictivos para decisiones más rápidas.",
+        "description": "Flujos automatizados y dashboards en tiempo real para decisiones más rápidas.",
         "bullets": {
           "0": "Automatización de procesos repetitivos",
           "1": "Dashboards y reportes ejecutivos",
-          "2": "Análisis predictivo y alertas"
+          "2": "Alertas y notificaciones"
         }
       },
       "integration": {
