@@ -307,6 +307,77 @@
         "items": ["Morosos, pagos y saldos en Excel", "El estado de cuenta de cada casa", "Cada ajuste de mora guarda su razón"]
       }
     },
+    "plans": {
+      "eyebrow": "Precios de la convención · hasta el 22 de noviembre",
+      "title": "El mismo sistema. Tú eliges cuánto cambiarle.",
+      "cta": "Ver planes",
+      "price_label": "de implementación, más IVA",
+      "base": {
+        "name": "Base",
+        "price": "Q 5,000",
+        "summary": "El sistema completo, ajustado a cómo cobras.",
+        "items": [
+          "Factura electrónica y pago con tarjeta",
+          "Tu mora, tus fechas de cobro y tu agua",
+          "Tus saldos migrados"
+        ]
+      },
+      "completo": {
+        "name": "Completo",
+        "price": "Q 15,000",
+        "summary": "El plan Base y dos cambios a tu medida.",
+        "items": [
+          "Todo lo del plan Base",
+          "2 cambios de la lista",
+          "Cada cambio adicional: Q 5,000"
+        ]
+      },
+      "medida": {
+        "name": "A la medida",
+        "price": "Q 20,000+",
+        "summary": "Lo que el sistema todavía no trae.",
+        "items": [
+          "Todo lo del plan Completo",
+          "Módulos nuevos: reservas, visitas, egresos",
+          "Se cotiza después de la demo"
+        ]
+      },
+      "monthly": {
+        "label": "Mensualidad en todos los planes, más IVA",
+        "price": "Q 800 + Q 10 por casa",
+        "includes": "Incluye servidor, corrección de errores y soporte.",
+        "examples": [
+          {
+            "houses": "60 casas",
+            "amount": "Q 1,400 al mes"
+          },
+          {
+            "houses": "200 casas",
+            "amount": "Q 2,800 al mes"
+          }
+        ]
+      },
+      "changes": {
+        "title": "Los cambios que puedes elegir",
+        "report": {
+          "title": "Reporte a tu medida",
+          "text": "El resumen que tu junta quiere ver."
+        },
+        "statement": {
+          "title": "Estado de cuenta",
+          "text": "Con tu formato y tus columnas."
+        },
+        "charge": {
+          "title": "Otro tipo de cobro",
+          "text": "Parqueo, seguridad o multas."
+        },
+        "late": {
+          "title": "Otra regla de mora",
+          "text": "Monto fijo, o también sobre el agua."
+        }
+      },
+      "note": "Contrato mínimo de 12 meses. La afiliación con el banco y con el certificador de facturas la tramitas tú, y sus comisiones no están incluidas."
+    },
     "questions": {
       "title": "Lo que nos preguntan.",
       "excel": { "q": "¿Y mi Excel?", "a": "Tus saldos los migramos nosotros, y los reportes te siguen saliendo en Excel." },

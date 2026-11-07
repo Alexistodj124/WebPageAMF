@@ -1563,7 +1563,107 @@ textarea {
   line-height: 1.6;
 }
 
-#condo-contacto {
+.condo-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.condo-plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.condo-price {
+  display: grid;
+  gap: 2px;
+  margin-bottom: 14px;
+}
+
+.condo-price strong {
+  font-size: clamp(1.9rem, 4vw, 2.3rem);
+  line-height: 1.1;
+  color: var(--text-strong);
+}
+
+.condo-price small {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.condo-monthly {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 28px;
+  background: var(--brand-soft);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+}
+
+.condo-monthly small {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+.condo-monthly strong {
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 1.9rem);
+  line-height: 1.15;
+  color: var(--text-strong);
+}
+
+.condo-monthly p {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.condo-monthly dl {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.condo-monthly dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.95rem;
+}
+
+.condo-monthly dt {
+  color: var(--muted);
+}
+
+.condo-monthly dd {
+  margin: 0;
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+.condo-changes-title {
+  margin: 44px 0 20px;
+  font-size: 1.3rem;
+  color: var(--text-strong);
+}
+
+.condo-changes {
+  display: grid;
+  gap: 20px;
+}
+
+.condo-plan-note {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+#condo-contacto,
+#condo-planes {
   scroll-margin-top: var(--header-h);
 }
 
@@ -1609,5 +1709,14 @@ textarea {
 
   .condo-hero-grid {
     grid-template-columns: 1fr 1.05fr;
+  }
+
+  .condo-monthly {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+  }
+
+  .condo-changes {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

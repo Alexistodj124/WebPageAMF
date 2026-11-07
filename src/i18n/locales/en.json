@@ -307,6 +307,77 @@
         "items": ["Overdue accounts, payments and balances in Excel", "Each house's account statement", "Every late-charge adjustment keeps its reason"]
       }
     },
+    "plans": {
+      "eyebrow": "Convention pricing · until November 22",
+      "title": "The same system. You choose how much to change.",
+      "cta": "See plans",
+      "price_label": "implementation, plus VAT",
+      "base": {
+        "name": "Base",
+        "price": "Q 5,000",
+        "summary": "The complete system, set up the way you charge.",
+        "items": [
+          "Electronic invoicing and card payments",
+          "Your late charges, billing dates and water",
+          "Your balances migrated"
+        ]
+      },
+      "completo": {
+        "name": "Complete",
+        "price": "Q 15,000",
+        "summary": "The Base plan and two changes made for you.",
+        "items": [
+          "Everything in the Base plan",
+          "2 changes from the list",
+          "Each extra change: Q 5,000"
+        ]
+      },
+      "medida": {
+        "name": "Custom",
+        "price": "Q 20,000+",
+        "summary": "What the system doesn't have yet.",
+        "items": [
+          "Everything in the Complete plan",
+          "New modules: bookings, visitors, expenses",
+          "Quoted after the demo"
+        ]
+      },
+      "monthly": {
+        "label": "Monthly fee on every plan, plus VAT",
+        "price": "Q 800 + Q 10 per house",
+        "includes": "Includes server, bug fixes and support.",
+        "examples": [
+          {
+            "houses": "60 houses",
+            "amount": "Q 1,400 a month"
+          },
+          {
+            "houses": "200 houses",
+            "amount": "Q 2,800 a month"
+          }
+        ]
+      },
+      "changes": {
+        "title": "The changes you can choose",
+        "report": {
+          "title": "Your own report",
+          "text": "The summary your board wants to see."
+        },
+        "statement": {
+          "title": "Account statement",
+          "text": "With your format and your columns."
+        },
+        "charge": {
+          "title": "Another type of charge",
+          "text": "Parking, security or fines."
+        },
+        "late": {
+          "title": "Another late-charge rule",
+          "text": "A fixed amount, or on water too."
+        }
+      },
+      "note": "12-month minimum contract. You handle the affiliation with the bank and the invoice certifier, and their fees are not included."
+    },
     "questions": {
       "title": "What people ask us.",
       "excel": { "q": "What about my Excel?", "a": "We migrate your balances, and your reports still come out in Excel." },

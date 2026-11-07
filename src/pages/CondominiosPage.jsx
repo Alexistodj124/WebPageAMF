@@ -11,6 +11,8 @@ const debtors = [
 ]
 
 const roles = ['admin', 'neighbor', 'board']
+const plans = ['base', 'completo', 'medida']
+const changes = ['report', 'statement', 'charge', 'late']
 const questions = ['excel', 'card', 'rules']
 
 function CondominiosPage() {
@@ -28,9 +30,14 @@ function CondominiosPage() {
               {t('condominios.title_a')} <span>{t('condominios.title_b')}</span>
             </h1>
             <p className="lead">{t('condominios.subtitle')}</p>
-            <a href="#condo-contacto" className="btn btn-primary">
-              {t('condominios.cta')}
-            </a>
+            <div className="condo-hero-actions">
+              <a href="#condo-contacto" className="btn btn-primary">
+                {t('condominios.cta')}
+              </a>
+              <a href="#condo-planes" className="btn btn-secondary">
+                {t('condominios.plans.cta')}
+              </a>
+            </div>
           </div>
 
           <div className="condo-mock" aria-hidden="true">
@@ -83,6 +90,59 @@ function CondominiosPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section compact reveal" id="condo-planes">
+        <div className="container">
+          <span className="eyebrow">{t('condominios.plans.eyebrow')}</span>
+          <h2 className="section-title">{t('condominios.plans.title')}</h2>
+
+          <div className="grid-3 condo-roles">
+            {plans.map((plan) => (
+              <article className="card condo-plan" key={plan}>
+                <h3>{t(`condominios.plans.${plan}.name`)}</h3>
+                <div className="condo-price">
+                  <strong>{t(`condominios.plans.${plan}.price`)}</strong>
+                  <small>{t('condominios.plans.price_label')}</small>
+                </div>
+                <p>{t(`condominios.plans.${plan}.summary`)}</p>
+                <ul className="card-list">
+                  {t(`condominios.plans.${plan}.items`, { returnObjects: true }).map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+
+          <div className="condo-monthly">
+            <div>
+              <small>{t('condominios.plans.monthly.label')}</small>
+              <strong>{t('condominios.plans.monthly.price')}</strong>
+              <p>{t('condominios.plans.monthly.includes')}</p>
+            </div>
+            <dl>
+              {t('condominios.plans.monthly.examples', { returnObjects: true }).map((example) => (
+                <div key={example.houses}>
+                  <dt>{example.houses}</dt>
+                  <dd>{example.amount}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <h3 className="condo-changes-title">{t('condominios.plans.changes.title')}</h3>
+          <div className="condo-changes">
+            {changes.map((change) => (
+              <article className="condo-question" key={change}>
+                <h3>{t(`condominios.plans.changes.${change}.title`)}</h3>
+                <p>{t(`condominios.plans.changes.${change}.text`)}</p>
+              </article>
+            ))}
+          </div>
+
+          <p className="condo-plan-note">{t('condominios.plans.note')}</p>
         </div>
       </section>
 
