@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { sendLead } from '../utils/sendLead'
 
 const initialState = {
   name: '',
@@ -9,8 +10,6 @@ const initialState = {
   message: '',
   website: '',
 }
-
-const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || ''
 
 function ContactForm() {
   const { t } = useTranslation()
@@ -46,23 +45,14 @@ function ContactForm() {
     setStatus('submitting')
 
     try {
-      if (FORMSPREE_ENDPOINT) {
-        const response = await fetch(FORMSPREE_ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            name: data.name,
-            email: data.email,
-            company: data.company,
-            industry: data.industry,
-            message: data.message,
-          }),
-        })
-        if (!response.ok) throw new Error('Network response was not ok')
-      } else {
-        await new Promise((resolve) => setTimeout(resolve, 600))
-      }
-      setStatus('success')
+      const result = await sendLead('contacto', `AMF · ${data.name}`, {
+        nombre: data.name,
+        correo: data.email,
+        empresa: data.company,
+        industria: data.industry,
+        mensaje: data.message,
+      })
+      setStatus(result === 'sent' ? 'success' : 'mail')
       setData(initialState)
     } catch (err) {
       console.error(err)
@@ -172,6 +162,9 @@ function ContactForm() {
         {error ? <div className="form-error" role="alert">{error}</div> : null}
         {status === 'success' ? (
           <div className="form-success" role="status">{t('contact.form.success')}</div>
+        ) : null}
+        {status === 'mail' ? (
+          <div className="form-success" role="status">{t('contact.form.mail')}</div>
         ) : null}
 
         <button type="submit" className="btn btn-primary" disabled={submitting}>

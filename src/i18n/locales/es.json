@@ -7,7 +7,8 @@
       "services": "Servicios — AMF Technologies",
       "cases": "Casos de éxito — AMF Technologies",
       "industries": "Industrias — AMF Technologies",
-      "contact": "Contacto — AMF Technologies"
+      "contact": "Contacto — AMF Technologies",
+      "condominios": "Sistema para condominios — AMF Technologies"
     }
   },
   "nav": {
@@ -245,7 +246,7 @@
       "phone_label": "Teléfono",
       "phone_value": "+502 5043-8645",
       "email_label": "Email",
-      "email_value": "contacto@amftechnologies.com",
+      "email_value": "alexis@amf-technologies.com",
       "office_label": "Oficina",
       "office_value": "Ciudad de Guatemala, Guatemala",
       "social_label": "Instagram",
@@ -272,7 +273,61 @@
         "email": "Ingresa un correo electrónico válido.",
         "submit": "Hubo un error al enviar el formulario. Inténtalo de nuevo."
       },
-      "success": "Gracias. Hemos recibido tu mensaje y te responderemos en breve."
+      "success": "Gracias. Hemos recibido tu mensaje y te responderemos en breve.",
+      "mail": "Se abrió tu correo con el mensaje escrito. Solo falta que le des enviar."
+    }
+  },
+  "condominios": {
+    "eyebrow": "Sistema para condominios",
+    "title_a": "Tu condominio,",
+    "title_b": "bajo control.",
+    "subtitle": "Cuotas, agua, mora y facturas en una sola plataforma.",
+    "cta": "Contáctanos",
+    "mock": {
+      "debtors": "Morosos",
+      "overdue": "Moroso",
+      "owner": "Propietario",
+      "balance": "Saldo pendiente",
+      "fee": "Mantenimiento",
+      "water": "Agua"
+    },
+    "roles": {
+      "eyebrow": "Un solo sistema",
+      "title": "El mismo número para los tres.",
+      "admin": {
+        "title": "El administrador",
+        "items": ["Cargos del mes en un solo proceso", "Apruebas el depósito y sale la factura", "Sabes qué lecturas de agua te faltan"]
+      },
+      "neighbor": {
+        "title": "El vecino",
+        "items": ["Ve cuánto debe, mes por mes", "Sube comprobante o paga con tarjeta", "Recibe avisos y abre sus facturas"]
+      },
+      "board": {
+        "title": "La junta directiva",
+        "items": ["Morosos, pagos y saldos en Excel", "El estado de cuenta de cada casa", "Cada ajuste de mora guarda su razón"]
+      }
+    },
+    "questions": {
+      "title": "Lo que nos preguntan.",
+      "excel": { "q": "¿Y mi Excel?", "a": "Tus saldos los migramos nosotros, y los reportes te siguen saliendo en Excel." },
+      "card": { "q": "¿Y la tarjeta de los vecinos?", "a": "El número y el CVV nunca entran al sistema: se quedan en el banco." },
+      "rules": { "q": "¿Y si cobramos distinto?", "a": "Se arma a tu medida: tu cuota, tu agua, tu mora y tus reglas." }
+    },
+    "form": {
+      "title": "¿Cuántas casas administras?",
+      "subtitle": "Déjanos tus datos y te contactamos.",
+      "name": "Nombre",
+      "condo": "Condominio",
+      "houses": "Número de casas",
+      "contact": "Teléfono o correo",
+      "submit": "Enviar",
+      "subject": "Condominios · {{name}}",
+      "success": "Listo, recibimos tus datos. Te contactamos pronto.",
+      "mail": "Se abrió tu correo con los datos escritos. Solo falta que le des enviar.",
+      "errors": {
+        "required": "Completa los campos marcados con *.",
+        "submit": "No se pudo enviar. Inténtalo de nuevo."
+      }
     }
   },
   "footer": {
@@ -289,6 +344,7 @@
       "services_automation": "Automatización",
       "services_integration": "Integraciones",
       "services_support": "Soporte y SLA",
+      "condominios": "Sistema para condominios",
       "blog": "Blog",
       "careers": "Carreras",
       "privacy": "Privacidad",

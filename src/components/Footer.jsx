@@ -35,13 +35,14 @@ function Footer() {
               <li><Link to="/servicios">{t('footer.links.services_automation')}</Link></li>
               <li><Link to="/servicios">{t('footer.links.services_integration')}</Link></li>
               <li><Link to="/servicios">{t('footer.links.services_support')}</Link></li>
+              <li><Link to="/condominios">{t('footer.links.condominios')}</Link></li>
             </ul>
           </div>
 
           <div className="footer-col">
             <h4>{t('footer.contact')}</h4>
             <ul>
-              <li><a href="mailto:contacto@amftechnologies.com">contacto@amftechnologies.com</a></li>
+              <li><a href="mailto:alexis@amf-technologies.com">alexis@amf-technologies.com</a></li>
               <li><a href="tel:+50250438645">+502 5043-8645</a></li>
               <li><Link to="/contacto">{t('nav.cta')}</Link></li>
             </ul>

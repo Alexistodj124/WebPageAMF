@@ -7,7 +7,8 @@
       "services": "Services — AMF Technologies",
       "cases": "Case studies — AMF Technologies",
       "industries": "Industries — AMF Technologies",
-      "contact": "Contact — AMF Technologies"
+      "contact": "Contact — AMF Technologies",
+      "condominios": "Condominium management system — AMF Technologies"
     }
   },
   "nav": {
@@ -245,7 +246,7 @@
       "phone_label": "Phone",
       "phone_value": "+502 5043-8645",
       "email_label": "Email",
-      "email_value": "contacto@amftechnologies.com",
+      "email_value": "alexis@amf-technologies.com",
       "office_label": "Office",
       "office_value": "Guatemala City, Guatemala",
       "social_label": "Instagram",
@@ -272,7 +273,61 @@
         "email": "Please enter a valid email address.",
         "submit": "There was an error submitting the form. Please try again."
       },
-      "success": "Thank you. We've received your message and will respond shortly."
+      "success": "Thank you. We've received your message and will respond shortly.",
+      "mail": "Your email opened with the message filled in. Just press send."
+    }
+  },
+  "condominios": {
+    "eyebrow": "Condominium management system",
+    "title_a": "Your condominium,",
+    "title_b": "under control.",
+    "subtitle": "Fees, water, late charges and invoices on a single platform.",
+    "cta": "Contact us",
+    "mock": {
+      "debtors": "Overdue accounts",
+      "overdue": "Overdue",
+      "owner": "Owner",
+      "balance": "Balance due",
+      "fee": "Maintenance",
+      "water": "Water"
+    },
+    "roles": {
+      "eyebrow": "One system",
+      "title": "The same number for all three.",
+      "admin": {
+        "title": "The administrator",
+        "items": ["The month's charges in a single process", "Approve the deposit and the invoice is issued", "See which water readings are missing"]
+      },
+      "neighbor": {
+        "title": "The resident",
+        "items": ["Sees what they owe, month by month", "Uploads a receipt or pays by card", "Gets notices and opens their invoices"]
+      },
+      "board": {
+        "title": "The board",
+        "items": ["Overdue accounts, payments and balances in Excel", "Each house's account statement", "Every late-charge adjustment keeps its reason"]
+      }
+    },
+    "questions": {
+      "title": "What people ask us.",
+      "excel": { "q": "What about my Excel?", "a": "We migrate your balances, and your reports still come out in Excel." },
+      "card": { "q": "What about residents' cards?", "a": "The number and CVV never enter the system: they stay with the bank." },
+      "rules": { "q": "What if we charge differently?", "a": "It's built to fit: your fee, your water, your late charges and your rules." }
+    },
+    "form": {
+      "title": "How many houses do you manage?",
+      "subtitle": "Leave your details and we'll contact you.",
+      "name": "Name",
+      "condo": "Condominium",
+      "houses": "Number of houses",
+      "contact": "Phone or email",
+      "submit": "Send",
+      "subject": "Condominiums · {{name}}",
+      "success": "Done, we got your details. We'll contact you soon.",
+      "mail": "Your email opened with the details filled in. Just press send.",
+      "errors": {
+        "required": "Please fill in the fields marked with *.",
+        "submit": "It couldn't be sent. Please try again."
+      }
     }
   },
   "footer": {
@@ -289,6 +344,7 @@
       "services_automation": "Automation",
       "services_integration": "Integrations",
       "services_support": "Support and SLA",
+      "condominios": "Condominium system",
       "blog": "Blog",
       "careers": "Careers",
       "privacy": "Privacy",

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amftechnologies.com/sitemap.xml
+Sitemap: https://amf-technologies.com/sitemap.xml

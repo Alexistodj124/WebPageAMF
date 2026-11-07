@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://amftechnologies.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://amftechnologies.com/servicios</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://amftechnologies.com/casos-de-exito</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://amftechnologies.com/industrias</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://amftechnologies.com/contacto</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amf-technologies.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://amf-technologies.com/servicios</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amf-technologies.com/casos-de-exito</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amf-technologies.com/industrias</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amf-technologies.com/contacto</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amf-technologies.com/condominios</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>

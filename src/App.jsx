@@ -8,6 +8,7 @@ import ServicesPage from './pages/ServicesPage'
 import CaseStudiesPage from './pages/CaseStudiesPage'
 import IndustriesPage from './pages/IndustriesPage'
 import ContactPage from './pages/ContactPage'
+import CondominiosPage from './pages/CondominiosPage'
 import './styles/landing.css'
 
 function ScrollToTop() {
@@ -54,6 +55,7 @@ function App() {
           <Route path="/casos-de-exito" element={<CaseStudiesPage />} />
           <Route path="/industrias" element={<IndustriesPage />} />
           <Route path="/contacto" element={<ContactPage />} />
+          <Route path="/condominios" element={<CondominiosPage />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

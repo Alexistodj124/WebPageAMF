@@ -1319,15 +1319,6 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-  }
-  .nav-cta {
-    display: flex;
-  }
-  .hamburger {
-    display: none;
-  }
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1364,5 +1355,259 @@ textarea {
   }
   .process-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* En tablet el menú completo no cabe: se queda la hamburguesa */
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+  }
+  .nav-cta {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+/* ---------- Condominios ---------- */
+
+.condo-hero {
+  padding: 64px 0 56px;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  background:
+    radial-gradient(760px 420px at 85% 40%, rgba(37, 99, 235, 0.28), transparent 70%);
+}
+
+.condo-hero-grid {
+  display: grid;
+  gap: 48px;
+  align-items: center;
+}
+
+.condo-hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin: 14px 0 18px;
+}
+
+.condo-hero h1 span {
+  display: block;
+  color: var(--accent);
+}
+
+.condo-hero .lead {
+  margin-bottom: 28px;
+}
+
+.condo-mock {
+  position: relative;
+  padding-bottom: 190px;
+}
+
+.condo-window {
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.condo-window-bar {
+  display: flex;
+  gap: 6px;
+  padding: 11px 14px;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+}
+
+.condo-window-bar i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.condo-window-body {
+  padding: 18px 20px 24px;
+}
+
+.condo-window-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.condo-window-title strong {
+  font-size: 1.3rem;
+  color: var(--text-strong);
+}
+
+.condo-window-title span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+
+.condo-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 11px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.condo-row em {
+  justify-self: start;
+  font-style: normal;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fca5a5;
+  background: rgba(217, 58, 38, 0.2);
+  border-radius: 99px;
+  padding: 3px 10px;
+}
+
+.condo-row b {
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.condo-phone {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  width: 196px;
+  padding: 7px;
+  background: #000;
+  border-radius: 26px;
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--border-strong);
+}
+
+.condo-phone-screen {
+  display: grid;
+  gap: 6px;
+  padding: 14px 10px 12px;
+  background: #f7f8fa;
+  color: #12151a;
+  border-radius: 20px;
+}
+
+.condo-phone-screen > small {
+  font-size: 0.62rem;
+  color: #8a93a2;
+}
+
+.condo-phone-screen > strong {
+  font-size: 0.9rem;
+  margin-top: -6px;
+}
+
+.condo-balance {
+  display: grid;
+  padding: 10px;
+  background: var(--brand-strong);
+  color: #fff;
+  border-radius: 12px;
+}
+
+.condo-balance small {
+  font-size: 0.6rem;
+  opacity: 0.85;
+}
+
+.condo-balance b {
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.condo-charge {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 6px 8px;
+  background: #fff;
+  border: 1px solid #e8ebf0;
+  border-radius: 8px;
+  font-size: 0.62rem;
+}
+
+.condo-roles {
+  margin-top: 28px;
+}
+
+.condo-question {
+  padding: 4px 0 4px 18px;
+  border-left: 2px solid var(--brand);
+}
+
+.condo-question h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: var(--text-strong);
+}
+
+.condo-question p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+#condo-contacto {
+  scroll-margin-top: var(--header-h);
+}
+
+.condo-form-wrap {
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+}
+
+.condo-form {
+  width: 100%;
+  max-width: 560px;
+}
+
+.condo-form h2 {
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  line-height: 1.1;
+  color: var(--text-strong);
+  margin-bottom: 8px;
+}
+
+.condo-form input {
+  font-size: 1rem;
+  padding: 13px 14px;
+}
+
+.condo-form .btn {
+  width: 100%;
+}
+
+.condo-direct {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 980px) {
+  .condo-hero {
+    padding: 88px 0 80px;
+  }
+
+  .condo-hero-grid {
+    grid-template-columns: 1fr 1.05fr;
   }
 }
