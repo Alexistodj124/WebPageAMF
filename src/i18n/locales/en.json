@@ -343,16 +343,16 @@
       },
       "monthly": {
         "label": "Monthly fee on every plan, plus VAT",
-        "price": "Q 800 + Q 10 per house",
+        "price": "Q 800 + Q 25 per house",
         "includes": "Includes server, bug fixes and support.",
         "examples": [
           {
             "houses": "60 houses",
-            "amount": "Q 1,400 a month"
+            "amount": "Q 2,300 a month"
           },
           {
             "houses": "200 houses",
-            "amount": "Q 2,800 a month"
+            "amount": "Q 5,800 a month"
           }
         ]
       },

@@ -343,16 +343,16 @@
       },
       "monthly": {
         "label": "Mensualidad en todos los planes, más IVA",
-        "price": "Q 800 + Q 10 por casa",
+        "price": "Q 800 + Q 25 por casa",
         "includes": "Incluye servidor, corrección de errores y soporte.",
         "examples": [
           {
             "houses": "60 casas",
-            "amount": "Q 1,400 al mes"
+            "amount": "Q 2,300 al mes"
           },
           {
             "houses": "200 casas",
-            "amount": "Q 2,800 al mes"
+            "amount": "Q 5,800 al mes"
           }
         ]
       },
